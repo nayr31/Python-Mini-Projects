@@ -21,7 +21,7 @@ x = 25
 import time
 
 tic = time.perf_counter()
-for sup_n in range(x):
+for sup_n in range(x): # If all fibs aren't called in sequence, it doesn't store/access them multiple times
     f = fibb(x)
 toc = time.perf_counter()
 print(f"Fibonacci at {x} is {f}, done in {toc-tic}s.")
