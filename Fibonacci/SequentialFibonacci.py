@@ -1,3 +1,5 @@
+# Recursion is stupid! Iteration is the best method indeed...
+
 cache = [0, 1]
 
 def fib(n):
