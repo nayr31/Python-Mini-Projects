@@ -9,7 +9,7 @@ def fib(n):
             cache.append(b)
     return cache[n]
 
-x = 30
+x = 100
 
 import time
 
@@ -17,5 +17,5 @@ tic = time.perf_counter()
 ans = fib(x)
 toc = time.perf_counter()
 
-print(f"Got {ans} as the {x}th fibonacchi number.")
+print(f"Got {ans} as the {x}th fibonacci number in " + str(toc-tic) + "ms.")
 print(cache)

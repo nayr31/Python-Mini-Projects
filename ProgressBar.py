@@ -1,5 +1,7 @@
+# Creates a progress bar for uses in terminal projects
+
 import sys
-def progressbar(it, prefix="", size=60, out=sys.stdout): # Python3.3+
+def progressbar(it, prefix="", size=60, out=sys.stdout):
     count = len(it)
     def show(j):
         x = int(size*j/count)
